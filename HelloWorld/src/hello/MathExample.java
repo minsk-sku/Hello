@@ -38,3 +38,4 @@ private static int random() {
 	return 0;
 }
 }
+
