@@ -16,16 +16,18 @@ public class ArrayExample {
 		for (int i = 0; i < strAry.length; i++) {
 			System.out.println(strAry[i]);
 		}
-
+		
+			
 		int[] aAry = new int[5];
 		for (int i = 0; i < aAry.length; i++) {
 			aAry[i] = 10 + i * 10;
 			System.out.println(aAry[i]);
-		}
-		for (int i = 0; i < aAry.length; i++) {
-			System.out.println(strAry[i]);
 			sum = 0;
 		}
+		//for (int i = 0; i < aAry.length; i++) {
+			//System.out.println(strAry[i]);
+			
+		//}
 		for (int i = 0; i < aAry.length; i++) {
 			sum += aAry[1];
 		}
