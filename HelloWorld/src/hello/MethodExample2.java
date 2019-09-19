@@ -44,14 +44,11 @@ public class MethodExample2 {
 			} else if (selectNo == 2) {
 				scores = menu2(scores);
 
-				
-				}
-
 			} else if (selectNo == 3) {
 				for (int i = 0; i < scores.length; i++) {
 					System.out.println("scores[" + i + "]" + ": " + scores[i]);
-				}
 
+				}
 			} else if (selectNo == 4) {
 				int maxScore = 0, sum = 0;
 				for (int i = 0; i < scores.length; i++) {
@@ -67,10 +64,10 @@ public class MethodExample2 {
 				run = false;
 
 			}
-	
 
-	System.out.println("프로그램 종료");
+			System.out.println("프로그램 종료");
+
+		}
 
 	}
-
 }
