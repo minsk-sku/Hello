@@ -62,12 +62,15 @@ public class MethodExample2 {
 
 			} else if (selectNo == 5) {
 				run = false;
+				scanner.close();
 
 			}
+			
 
 			System.out.println("프로그램 종료");
 
 		}
+		
 
 	}
 }

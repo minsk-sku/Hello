@@ -19,9 +19,9 @@ public class CarExample {
 		car1.drive();
 		
 		Car car2 = new Car();
-		int[] intAry = new int[5];
+		//int[] intAry = new int[5];
 		Car[] carAry = new Car[2];
-		String[] strAry = null;
+		//String[] strAry = null;
 		
 		car2.model = "sonata" ;
 		car2.color = "blue";

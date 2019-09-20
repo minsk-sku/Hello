@@ -3,6 +3,19 @@ package classes;
 
 
 public class Calculator {
+	static double plus(double x, double y) {
+		return x + y;
+	}
+	static double minus(double x, double y) {
+		return x - y;
+	}
+	static double pi = 3.14159;
+	
+	
+	
+	
+	
+	
 	int plus(int x, int y) {
 		int result = x + y;
 		return result;

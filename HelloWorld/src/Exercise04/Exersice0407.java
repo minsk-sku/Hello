@@ -38,10 +38,10 @@ public class Exersice0407 {
 				break;
 
 			}
-
+			scanner.close();
 		}
 		System.out.println("프로그램 종료");
 
 	}
-
+	
 }

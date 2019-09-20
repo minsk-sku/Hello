@@ -16,7 +16,7 @@ public class ArrayTest {
 		System.out.println("값은 " + sum);
 
 		
-		
+		sc.close();
 		
 	}
     
