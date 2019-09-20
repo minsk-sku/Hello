@@ -7,6 +7,7 @@ public class CalExample {
 		Calculator cal = new Calculator();
 
 		Scanner sc = new Scanner(System.in);
+		// 단순한 방법
 		// System.out.print("a ");
 		// int a = sc.nextInt();
 		// System.out.print("b ");
@@ -23,6 +24,6 @@ public class CalExample {
 		}
 
 		cal.execute(ar[0], ar[1]);
-
+		sc.close();
 	}
 }

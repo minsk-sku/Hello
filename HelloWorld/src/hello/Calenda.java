@@ -1,6 +1,6 @@
 package hello;
 
-public class Cal {
+public class Calenda {
 	public static void main(String[] args) {
 		showCal(10);
 
