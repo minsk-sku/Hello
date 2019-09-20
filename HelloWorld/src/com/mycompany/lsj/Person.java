@@ -16,13 +16,13 @@ public class Person {
 	}
 	public void setAge(int age) {
 		
-		if (age<0) {
+		if (age<0) 
 			this.age=0;
 			
-		} else {
+		 else 
 				this.age = age;
 			
-		}
+		
 	}
 	public double getHeight() {
 		return height;

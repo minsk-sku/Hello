@@ -2,25 +2,22 @@ package com.mycompany.lsj;
 
 public class Circle {
 	private double radius;
-	
+
 	public void setradius(double radius) {
-		if (radius <  0);
-		this.radius = 0;
-		
-		else 
+		if (radius < 0)
+			this.radius = 0;
+
+		else
 			this.radius = radius;
-		
 	}
-	public double getradius();
-	
-	
-	
+
+	public double getRadius() {
+		return this.radius;
+	}
+
 	double getArea() {
-		return math pi*radius*radius;
-		
-		
-		
+		return Math.PI * radius * radius;
+
 	}
-	
 
 }
