@@ -14,7 +14,7 @@ public class Member {
 			
 	}
 	
-	public Member(String name, String id, String password, int Age) {
+	public Member(String name, String id, String password, int age) {
 		this.name = name;
 		this.id = id;
 		this.password = password;
