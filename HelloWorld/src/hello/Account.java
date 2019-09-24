@@ -7,7 +7,8 @@ public class Account {
 	
 	public Account() {}
 	
-	public Account(String ano, 	String owner, int balance) {
+	public Account(String ano, String owner, int balance) {
+		super();
 		this.ano = ano;
 		this.owner = owner;
 		this.balance = balance;

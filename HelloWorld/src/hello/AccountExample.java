@@ -13,6 +13,7 @@ public class AccountExample {
 			System.out.println("1.계좌생성 2.계좌목록 3.예금 4.출금 5.종료");
 			System.out.println("---------------");
 			int menu = sc.nextInt();
+			sc.nextLine();
 			if (menu == 1) {
 				creatAccount();
 			} else if (menu == 2) {
@@ -21,10 +22,8 @@ public class AccountExample {
 				deposit();
 			} else if (menu == 4) {
 				withdraw();
-
 			} else if (menu == 5) {
 				run = false;
-
 			}
 			System.out.println("종료");
 
@@ -34,18 +33,19 @@ public class AccountExample {
 	// 계좌생성
 	public static void creatAccount() {
 		System.out.println("creatAccount()");
-		System.out.println("계좌번호 입력");
+		System.out.println("계좌번호 입력:  ");
 		String accountNo = sc.nextLine();
-		System.out.println("사용자명 입력");
+		System.out.println("사용자명 입력:  ");
 		String accountName = sc.nextLine();
-		System.out.println("첫 계좌금액");
+		System.out.println("첫 계좌금액:  ");
 		int accountBalance = sc.nextInt();
-		Account accont = new Account(accountNo, accountName, accountBalance);
-		for(int i = 0; i<accountArray.length; i++) {
-			if(accountArray[i] == null) {
-				accountArray[i] = accont;
+		
+		Account accnt = new Account(accountNo, accountName, accountBalance);
+		for (int i = 0; i < accountArray.length; i++) {
+			if (accountArray[i] == null) {
+				accountArray[i] = accnt;
 				break;
-				
+
 			}
 		}
 	}
@@ -54,7 +54,7 @@ public class AccountExample {
 		System.out.println("getAccountList()");
 		for (Account a : accountArray) {
 			if (a != null)
-				System.out.println(a.getAno() + " " + a.getOwner() + " " + a.getBalance());
+				System.out.println("계좌번호 입력:  " + a.getAno() + ", 소유자:  " + a.getOwner() + ", 잔액:  " + a.getBalance());
 
 		}
 
@@ -62,13 +62,13 @@ public class AccountExample {
 
 	public static void deposit() {
 		System.out.println("deposit()");
-		System.out.println("계좌번호");
+		System.out.println("계좌번호 :  ");
 		String accountNo = sc.nextLine();
-		System.out.println("입금");
+		System.out.println("입금액 :  ");
 		int accountBalance = sc.nextInt();
-		for (Account accont : accountArray) {
-			if (accont != null && accont.getAno().equals(accountNo)) {
-				accont.setBalance(accountBalance);
+		for (Account accnt : accountArray) {
+			if (accnt != null && accnt.getAno().equals(accountNo)) {
+				accnt.setBalance(accountBalance);
 			}
 
 		}
@@ -77,13 +77,13 @@ public class AccountExample {
 
 	public static void withdraw() {
 		System.out.println("withdraw()");
-		System.out.println("계좌번호");
+		System.out.println("계좌번호 :  ");
 		String accountNo = sc.nextLine();
-		System.out.println("출금");
+		System.out.println("출금액 :  ");
 		int accountBalance = sc.nextInt();
-		for (Account accont : accountArray) {
-			if (accont != null && accont.getAno().equals(accountNo)) {
-				accont.setBalance(-accountBalance);
+		for (Account accnt : accountArray) {
+			if (accnt != null && accnt.getAno().equals(accountNo)) {
+				accnt.setBalance(-accountBalance);
 			}
 		}
 	}
