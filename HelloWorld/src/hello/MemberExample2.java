@@ -96,14 +96,20 @@ public class MemberExample2 {
 			}
 
 		}
-		if (isMemberId == true && isMemberPasw == true) {
+		/*if (isMemberId == true && isMemberPasw == true) {
 			System.out.println("이름 :  " + memberName + " 나이 :  " + memberAge);
 		} else if (isMemberId == true & isMemberPasw == false) {
 			System.out.println("패스워드가 틀렸습니다");
 		} else if (isMemberId == false & isMemberPasw == false) {
 			System.out.println("존재하지 않는 계정입니다.");
+		}*/
+		if (isMemberId & isMemberPasw) {
+			System.out.println("이름 :  " + memberName + " 나이 :  " + memberAge);
+		} else if (isMemberId & !isMemberPasw) {
+			System.out.println("패스워드가 틀렸습니다");
+		} else if (!isMemberId & !isMemberPasw) {
+			System.out.println("존재하지 않는 계정입니다.");
 		}
-
 	}
 
 }

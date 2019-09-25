@@ -49,11 +49,13 @@ public class Exercise0510 {
 
 				} else if (selectNo == 5) {
 					run = false;
+				
 
 				}
 			}
 
 			System.out.println("프로그램 종료");
+			scanner.close();
 		}
 
 	}

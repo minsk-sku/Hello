@@ -1,6 +1,6 @@
 package hello;
 
-public class ArraryExample3 {
+public class ArrayExample3 {
 	public static void main(String[] args) {
 
 		int[][] intAry = new int[2][];

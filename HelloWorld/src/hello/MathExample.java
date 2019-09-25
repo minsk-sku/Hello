@@ -36,7 +36,7 @@ public class MathExample {
 //	}else {
 //	System.out.println("F");
 // }
-	}
+	//}
 
 	private static int random() {
 		// TODO Auto-generated method stub

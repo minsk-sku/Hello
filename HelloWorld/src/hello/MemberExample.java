@@ -26,6 +26,7 @@ public class MemberExample {
 
 		}
 		System.out.println();
+		sc.close();
 
 	}
 

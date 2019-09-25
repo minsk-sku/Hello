@@ -19,8 +19,10 @@ public class MethodExample2 {
 		for (int i = 0; i < ary.length; i++) {
 			System.out.print("scores[" + i + "]" + "> ");
 			ary[i] = scanner.nextInt();
+			
 		}
 		return copyAry;
+		
 	}
 
 	public static void main(String[] args) {
@@ -62,9 +64,11 @@ public class MethodExample2 {
 
 			} else if (selectNo == 5) {
 				run = false;
-				scanner.close();
+				
+				
 
 			}
+			
 			
 
 			System.out.println("프로그램 종료");

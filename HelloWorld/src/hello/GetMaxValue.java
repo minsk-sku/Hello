@@ -22,7 +22,7 @@ public class GetMaxValue {
 			//MaxValue = (MaxValue > arr[i] ? MaxValue : arr[i]);
 			}
 		System.out.println("최대값 " + MaxValue);          
-		
+		sc.close();
 		}
 	}
 

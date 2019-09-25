@@ -17,6 +17,7 @@ public class ArrayTest1 {
 			result = b;
 		result = (a > b ? a : b);
 		System.out.println("더 큰 수는" + result);
-			
+		
+		sc.close();
 	}
 }

@@ -8,6 +8,7 @@ public class MethodExample3_1 {
 		System.out.println("월을 입력하세요.");
 		int mon = sc.nextInt();
 		showCal(mon);
+		sc.close();
 	}
 
 	public static void showCal(int mon) {

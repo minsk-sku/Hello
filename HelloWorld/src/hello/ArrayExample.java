@@ -2,7 +2,7 @@ package hello;
 
 public class ArrayExample {
 	public static void main(String[] args) {
-		int a = 10, b = 20, c = 30;
+		//int a = 10, b = 20, c = 30;
 		int sum = 10;
 		int[] intAry = { 10, 20, 30, 40, 50, 60 };
 		String[] strAry = { "Nice", "Good", "Hello" };
