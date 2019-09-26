@@ -1,10 +1,10 @@
 package com.yedam.example;
 
 public class Car {
-	Tire frontLeft = new Tire("앞왼", 6);
-	Tire frontRight = new Tire("앞오", 2);
-	Tire backLeft = new Tire("뒤왼", 3);
-	Tire backRight = new Tire("뒤오", 4);
+	Tire frontLeft = new Tire("frontLeft", 6);
+	Tire frontRight = new Tire("frontRight", 2);
+	Tire backLeft = new Tire("backLeft", 3);
+	Tire backRight = new Tire("backRight", 4);
 
 	int run() {
 		System.out.println("run");

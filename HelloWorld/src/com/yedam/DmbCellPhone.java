@@ -23,7 +23,7 @@ public class DmbCellPhone extends CellPhone {
 		System.out.println("채널" + channel + "번으로 DMB 수신 시작");
 	}
 	
-	void changeChannelDmb() {
+	void changeChannelDmb(int channel) {
 		this.channel = channel;
 		System.out.println("채널" + channel + "번으로 변경");
 	}

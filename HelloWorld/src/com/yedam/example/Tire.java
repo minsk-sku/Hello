@@ -5,12 +5,12 @@ public class Tire {
 	int accumulatedRotation;
 	String location;
 
-	Tire(String location, int maxRotation) {
+	public Tire(String location, int maxRotation) {
 		this.location = location;
 		this.maxRotation = maxRotation;
 	}
 
-	boolean roll() {
+	public boolean roll() {
 		++accumulatedRotation;
 		if (accumulatedRotation < maxRotation) {
 			System.out.println(location + "Tire 수명: " + (maxRotation - accumulatedRotation) + "회");
