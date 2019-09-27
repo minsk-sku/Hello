@@ -3,19 +3,33 @@ package com.board.impl;
 import com.board.model.Board;
 import com.board.model.BoardService;
 
-public class BoardServiceImpl implements BoardService{
+public class BoardServiceImpl implements BoardService {
 
 	@Override
-	public void writeBoard() {
-		// TODO Auto-generated method stub
-		
+	public void writeBoard(Board board, Board[] boards) {
+		for (int i = 0; i < boards.length; i++) {
+			if (boards[i] == null) {
+				boards[i] = board;
+				break;
+			}
+		}
 	}
 
 	@Override
-	public Board getBoard(int board) {
-		// TODO Auto-generated method stub
-		return null;
+	public Board getBoard(int boardNo, Board[] boards) {
+		Board board = null;
+		for (int i = 0; i < boards.length; i++) {
+			if (boards[i] != null && boards[i].getBoardNo() == boardNo) {
+				board = boards[i];
+			}
+		}
+		return board;
 	}
-	
+
+	@Override
+	public Board[] getBoardList(Board[] boards) {
+		Board[] resultAry = boards;
+		return resultAry;
+	}
 
 }

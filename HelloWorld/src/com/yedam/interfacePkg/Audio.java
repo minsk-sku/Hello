@@ -1,18 +1,15 @@
 package com.yedam.interfacePkg;
 
 public class Audio implements RemoteControl {
-	private int volume;
-
+	int volume;
 	@Override
 	public void turnOn() {
-		System.out.println("Audio on");
+		System.out.println("Audio를 켭니다.");
 	}
-
 	@Override
 	public void turnOff() {
-		System.out.println("Audiooff");
+		System.out.println("Audio를 켭니다.");
 	}
-
 	@Override
 	public void setVolume(int volume) {
 		this.volume = volume;

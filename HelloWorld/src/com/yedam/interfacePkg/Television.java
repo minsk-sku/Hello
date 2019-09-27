@@ -1,18 +1,15 @@
 package com.yedam.interfacePkg;
 
 public class Television implements RemoteControl {
-	private int volume;
-
+	int volume;
 	@Override
 	public void turnOn() {
-		System.out.println("TV on");
+		System.out.println("텔리비젼을 켭니다.");
 	}
-
 	@Override
 	public void turnOff() {
-		System.out.println("TV off");
+		System.out.println("텔리비젼을 끕니다.");
 	}
-
 	@Override
 	public void setVolume(int volume) {
 		this.volume = volume;
