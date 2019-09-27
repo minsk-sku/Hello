@@ -46,4 +46,10 @@ public class Board {
 		this.writer = writer;
 	}
 
+	@Override
+	public String toString() {
+		return "Board [boardNo=" + boardNo + ", title=" + title + ", content=" + content + ", writer=" + writer + "]";
+	}
+	
+
 }

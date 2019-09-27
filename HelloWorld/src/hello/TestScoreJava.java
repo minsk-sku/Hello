@@ -2,31 +2,16 @@ package hello;
 
 import java.util.Scanner;
 
-public class Score {
-	
+class Score {
 
 	private String stNo;
 	private String stNm;
 	private int koSc;
 	private int enSc;
 	private int mtSc;
-	private int toSc;
-	private double avSc;
-	
-	
-	
 
 	public Score() {
 	}
-	
-	
-	
-	
-	
-	
-
-
-
 
 	public Score(String stNo, String stNm, int koSc, int enSc, int mtSc) {
 		super();
@@ -36,7 +21,6 @@ public class Score {
 		this.enSc = enSc;
 		this.mtSc = mtSc;
 	}
-	
 
 	public String getStNo() {
 		return stNo;
@@ -99,7 +83,7 @@ public class TestScoreJava {
 			} else if (menu == 3) {
 				getStudent();
 			} else if (menu == 4) {
-				;
+				getAvg();
 			} else if (menu == 5) {
 
 			} else if (menu == 6) {
@@ -147,8 +131,8 @@ public class TestScoreJava {
 		System.out.println("학생번호:  ");
 		String stId = sc.nextLine();
 		String sName = null;
-		int sKo = 0, sEn = 0, sMt = 0, sTo=0;
-		double sAv=0.0;
+		int sKo = 0, sEn = 0, sMt = 0, sTo = 0;
+		double sAv = 0.0;
 		for (Score sco : scoreArray) {
 			if (sco != null && sco.getStNo().equals(stId)) {
 				sName = sco.getStNm();
@@ -156,23 +140,27 @@ public class TestScoreJava {
 				sEn = sco.getEnSc();
 				sMt = sco.getMtSc();
 				sTo = sKo + sEn + sMt;
-				sAv = (double) sTo/3;
-				System.out.println("이름 :  " + sName + "국어: " + sKo + "영어: " + sEn + "수학: " + sMt +"총점:  " + sTo + "평균;  " + sAv);
+				sAv = (double) sTo / 3;
+				System.out.println(
+						"이름 :  " + sName + "국어: " + sKo + "영어: " + sEn + "수학: " + sMt + "총점:  " + sTo + "평균;  " + sAv);
 			}
 		}
-		
-			
-		}
-
-		
-		
-		
-		
 	}
-	
-	
-	
-	
-	
-	
+
+	public static void getAvg() {
+		System.out.println("4.통계");
+		int sum = 0, con = 0;
+
+		double avs = 0;
+		for (Score s : scoreArray) {
+			if (s != null) {
+				sum += s.getKoSc() + s.getEnSc() + s.getMtSc();
+				con++;
+			}
+		}
+		avs = (double) sum / con;
+		System.out.println("총점 " + sum + "평균" + avs);
+
+	}
+
 }

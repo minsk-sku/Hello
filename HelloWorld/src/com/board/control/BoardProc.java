@@ -24,11 +24,26 @@ public class BoardProc {
 			} else if (menu == 3) {
 				getBoardList();
 			} else if (menu == 4) {
+				updateBoard();
+			} else if (menu == 5) {
 				System.out.println("프로그램을 종료합니다.");
 				break;
 			}
 		}
 		System.out.println("프로그램 종료.");
+	}
+
+	public void updateBoard() {
+		System.out.println("No.");
+		int boardNo = sc.nextInt();
+		sc.nextLine();
+		System.out.println("content");
+		String title = sc.nextLine();
+		String contents = sc.nextLine();
+		String writer = sc.nextLine();
+		Board board = new Board(boardNo, title, contents, writer);
+		service.writeBoard(board, boardAry);
+
 	}
 
 	public void writeBoard() {
@@ -43,6 +58,7 @@ public class BoardProc {
 		System.out.println("작성자 입력하세요.");
 		String writer = sc.nextLine();
 		Board board = new Board(boardNo, title, contents, writer);
+
 		service.writeBoard(board, boardAry);
 
 //		for (int i = 0; i < boardAry.length; i++) {
@@ -56,6 +72,7 @@ public class BoardProc {
 	public void getBoard() {
 		System.out.println("한건조회.");
 		System.out.println("조회할 번호를 입력:");
+
 		int boardNo = sc.nextInt();
 		Board board = service.getBoard(boardNo, boardAry);
 		System.out.println(board);
@@ -68,17 +85,27 @@ public class BoardProc {
 	}
 
 	public void getBoardList() {
+
 		System.out.println("전체글조회.");
-		Board[] boards = service.getBoardList(boardAry);
-		for (Board board : boards) {
+		Board[] resultAry = service.getBoardList(boardAry);
+		for (Board board : resultAry) {
 			if (board != null)
 				System.out.println(board);
 		}
+	}
+
+	public void deleteBoard() {
+		System.out.println("한건삭제");
+		System.out.println("조회할 번호를 입력:");
+
+		int boardNo = sc.nextInt();
+		service.deleteBoard(boardNo, boardAry);
+
+	}
 
 //		for (int i = 0; i < boardAry.length; i++) {
 //			if (boardAry[i] != null) {
 //				System.out.println(boardAry[i].getTitle() + "," + boardAry[i].getContents());
 //			}
 //		}
-	}
 }
