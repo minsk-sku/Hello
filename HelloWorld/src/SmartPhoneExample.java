@@ -1,4 +1,4 @@
-package api;
+
 
 public class SmartPhoneExample {
 	public static void main(String[] args) {

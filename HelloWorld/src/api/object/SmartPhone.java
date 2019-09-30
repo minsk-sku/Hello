@@ -1,4 +1,5 @@
-package api;
+package api.object;
+
 
 public class SmartPhone {
 	private String company;

@@ -1,11 +1,10 @@
-package api;
+package api.object;
 
 public class Key {
 	public int number;
 
 	public Key(int number) {
 		this.number = number;
-
 	}
 
 	@Override
@@ -16,15 +15,12 @@ public class Key {
 				return true;
 			}
 		}
-
 		return false;
 	}
 
 	@Override
 	public int hashCode() {
-
 		return number;
-
 	}
 
 }
