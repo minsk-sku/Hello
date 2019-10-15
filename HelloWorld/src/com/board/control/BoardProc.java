@@ -1,16 +1,21 @@
 package com.board.control;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
-import com.board.impl.BoardServiceImpl;
+import com.board.impl.BoardCollectionImpl;
 import com.board.model.Board;
-import com.board.model.BoardService;
+import com.board.model.BoardCollection;
 
 public class BoardProc {
 	Scanner sc = new Scanner(System.in);
-	Board[] boardAry = new Board[10];
-	BoardService service = new BoardServiceImpl();
-
+	//Board[] boardAry = new Board[10];
+	List<Board> boardAry=new ArrayList<>();	
+	
+	//BoardService service = new BoardServiceImpl();
+	BoardCollection service = new BoardCollectionImpl();
+	
 	public void execute() {
 		while (true) {
 			System.out.println("메뉴선택하세요.");

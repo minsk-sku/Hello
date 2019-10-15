@@ -13,7 +13,9 @@ public class Baseball {
 		}
 	}
 
-	boolean run = true;while(run)
+	boolean run = true;
+	
+	while(run)
 	{
 		System.out.println("input 3 number");
 		System.out.println("--------------");
@@ -48,5 +50,4 @@ public class Baseball {
 }
 
 }
-
 }

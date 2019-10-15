@@ -23,6 +23,16 @@ public class HashMapExample {
 			
 		}
 		
+		Set<Map.Entry<String, Integer>> entrySet= map.entrySet();
+		Iterator<Map.Entry<String, Integer>> entryIterator= entrySet.iterator();
+		while (mapIter.hasNext()) {
+			Map.Entry<String, Integer> ent=mapIter.next();
+			System.out.println("key: "+ ent.getKey()+"value: "+ent.getValue());
+			
+		}
+		for(Map.Entry<String, Integer>mapIter:entrySet) {
+			System.out.println(mapEnt.getKey());
+		}
 		
 		
 		

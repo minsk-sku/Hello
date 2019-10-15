@@ -8,7 +8,7 @@ public class Student {
 	int studentNo;
 
 	//생성자
-	Student(){
+	public Student(String string, int i, int j){
 		
 	}
 	Student(String name){
