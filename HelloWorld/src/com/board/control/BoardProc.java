@@ -104,8 +104,9 @@ public class BoardProc {
 	public void getBoardList() {
 
 		System.out.println("전체글조회.");
-		Board[] resultAry = service.getBoardList(boardAry);
-		for (Board board : resultAry) {
+//		Board[] boards = service.getBoardList(boardAry);
+		List<Board> boards = service.getBoardList(boardAry);
+		for (Board board : boards) {
 			if (board != null)
 				System.out.println(board);
 		}
